@@ -3,7 +3,7 @@
 
 
 /* Asterisk wildcard selector to override default styles added by the browser */
-*  {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     /* generic project styles */
     color: #3a3a3a;
-    font-family: 'lato' , sans-serif;
+    font-family: 'lato', sans-serif;
 
 }
 
@@ -24,7 +24,7 @@ body {
 /* header */
 header {
     background-color: #ffffff;
-    padding:0 1rem;
+    padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
@@ -35,15 +35,17 @@ header {
 }
 
 
-header a{
+header a {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
 }
+
 h1 {
-    font-family:'Oswald' , sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #252525; ;
+    color: #252525;
+    ;
 }
 
 #menu {
@@ -52,7 +54,7 @@ h1 {
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -67,10 +69,10 @@ nav {
     background-color: #ffffff;
     width: 100%;
     left: 0;
-    padding: 0 1rem;    
-    box-shadow:0 2px 2px #3a3a3a ;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
     display: none;
-    top:100%;
+    top: 100%;
 }
 
 /*nav toggle*/
@@ -96,49 +98,60 @@ main {
 }
 
 /* footer */
-footer {
-    background-color: orange;
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color:#3a3a3a;
 }
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
-    nav{
+    nav {
         display: block;
         position: relative;
         box-shadow: none;
         width: fit-content;
-        padding-right: 1rem ;
+        padding-right: 1rem;
     }
-    
-    #menu{
+
+    #menu {
         display: flex;
     }
-    
-    #menu > li {
+
+    #menu>li {
         padding-left: 1rem;
     }
-    
+
     .nav-toggle-label {
         display: none;
     }
 
     #logo {
         font-size: 280%;
-        line-height:75px ;
-        margin: 0 0.5rem ;
+        line-height: 75px;
+        margin: 0 0.5rem;
     }
 
     /* Main Content */
     main {
         /* Push main content down to acommodate larger header */
-        margin-top:79px ;
+        margin-top: 79px;
 
     }
 }
 
 /* Media query: Laptops and upwards (992px and up) */
 @media screen and (min-width: 992px) {
-   #menu a:hover {
+    #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
 }
