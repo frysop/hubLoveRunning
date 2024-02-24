@@ -120,6 +120,19 @@ main {
     color:#ffffff;
 }
 
+/* Reasons section */
+
+#reasons{
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid #3a3a3a;
+}
+reasons h2 {
+    text-align: center;
+    height: 280%;
+    margin-bottom: 20px;
+
+}
 /* footer */
 #social-networks {
     text-align: center;
