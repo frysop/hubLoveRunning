@@ -60,7 +60,7 @@ header a {
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -126,7 +126,8 @@ main {
     padding-left: 10px;
 }
 
-#cover-text >h2, #cover-text >h3 {
+#cover-text>h2,
+#cover-text>h3 {
     color: #ffffff;
 }
 
@@ -217,11 +218,12 @@ main {
 /* SignUp form styling */
 
 #signup {
-    background: url("../images/signup-image.webp");
-    background-position: 75%;
+    background-image: url("../images/signup-image.webp");
     background-size: cover;
-    flex-grow: 1;
+    background-position: 75%;
     padding: 20px 10% 0 10%;
+    flex-grow: 1;
+
 }
 
 
@@ -242,28 +244,32 @@ main {
 .text-input {
     background: transparent;
     color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
     border: 1px solid #fafafa;
     border-radius: 2px;
-    height: 25px;
-    width: 100%;
-    margin: 5px 0 20px 0;
     padding: 0 5px;
 }
 
 .radio-buttons {
 
-    justify-content: space-between;
+
     width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 
 .join-button {
-    border-radius: 2px;
     margin-top: 20px;
+    border-radius: 2px;
+
     padding: 15px 32px;
-    color: #fafafa;
-    background-color: #454b1b;
     font-size: 100%;
+
+    background-color: #454b1b;
+    color: #fafafa;
+
 }
 
 /* footer */
@@ -282,7 +288,7 @@ main {
 }
 
 
-/* Media query: large or landscape phones (575px and up) */
+/* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width:576px) {
     #photos {
         column-count: 2;
@@ -306,7 +312,7 @@ main {
         display: flex;
     }
 
-    #menu>li {
+    #menu > li {
         padding-left: 1rem;
     }
 
@@ -343,12 +349,12 @@ main {
 
     }
 
-    #benefits-physical>div,
-    #benefits-mental>div {
+    #benefits-physical > div,
+    #benefits-mental > div {
         width: 75%;
     }
 
-    #benefits-mental>div {
+    #benefits-mental > div {
         text-align: end;
         align-self: flex-end;
     }
@@ -370,7 +376,7 @@ main {
         max-width: 400px;
         top: 150px;
         left: 10%;
-        
+
 
     }
 
